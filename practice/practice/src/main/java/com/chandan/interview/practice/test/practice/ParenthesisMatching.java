@@ -6,6 +6,10 @@ import java.util.Stack;
 
 public class ParenthesisMatching {
 
+    public static void main(String[] args) {
+        System.out.println(new ParenthesisMatching().isValid("]["));
+    }
+
     public boolean isValid(String s) {
 
         Stack<Character> stack = new Stack<>();

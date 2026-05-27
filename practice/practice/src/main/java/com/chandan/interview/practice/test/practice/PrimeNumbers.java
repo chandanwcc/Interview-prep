@@ -7,15 +7,10 @@ public class PrimeNumbers {
     public static void main(String[] args) {
         Arrays.stream(printPrimes(30)).forEach(el->System.out.print(el+ " "));
     }
-
     private static int[] printPrimes(int number) {
-
         boolean[] prime = new boolean[number+1];
-
         Arrays.fill(prime, true);
-
         prime[0] = prime[1] = false;
-
         for(int i =2; i*i <= number ; i++){
             if(prime[i]){
                 for(int j = i*i ; j<= number; j=j+i){
