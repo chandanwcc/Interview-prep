@@ -36,7 +36,7 @@ public class FunctionalInterfaceExample {
 
         System.out.println(supplier.get());
 
-        Function<Integer, String> function = x->String.valueOf(x)+"hello";
+        Function<Integer, String> function = x-> x +"hello";
 
         System.out.println(function.apply(100));
 

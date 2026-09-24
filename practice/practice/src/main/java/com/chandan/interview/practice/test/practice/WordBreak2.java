@@ -13,6 +13,7 @@ public class WordBreak2 {
         System.out.println(printAllPossibleWays(input, wordDict));
     }
 
+    @SuppressWarnings("unchecked")
     private static List<String> printAllPossibleWays(String input, String[] wordDict) {
 
         Set<String> dict = new HashSet<>(List.of(wordDict));
